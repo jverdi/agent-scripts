@@ -1,6 +1,6 @@
 # Agent Scripts
 
-This folder collects the Sweetistics guardrail helpers so they are easy to reuse in other repos or share during onboarding. Everything here is copied verbatim from `/Users/steipete/Projects/sweetistics` on 2025-11-08 unless otherwise noted.
+This folder collects the Sweetistics guardrail helpers so they are easy to reuse in other repos or share during onboarding. Everything here is copied verbatim from `~/code/sweetistics` on 2025-11-08 unless otherwise noted.
 
 Additional skills (copied 2025-12-31) are from @Dimillian’s public `Dimillian/Skills` repository:
 - `skills/swift-concurrency-expert`
@@ -15,7 +15,7 @@ Additional skills (copied 2025-12-31) are from @Dimillian’s public `Dimillian/
 
 ## Pointer-Style AGENTS
 - Shared guardrail text now lives only inside this repo: `AGENTS.MD` (shared rules + tool list).
-- Every consuming repo’s `AGENTS.MD` is reduced to the pointer line `READ ~/Projects/agent-scripts/AGENTS.MD BEFORE ANYTHING (skip if missing).` Place repo-specific rules **after** that line if they’re truly needed.
+- Every consuming repo’s `AGENTS.MD` is reduced to the pointer line `READ ~/code/agent-scripts/AGENTS.MD BEFORE ANYTHING (skip if missing).` Place repo-specific rules **after** that line if they’re truly needed.
 - Do **not** copy the `[shared]` or `<tools>` blocks into other repos anymore. Instead, keep this repo updated and have downstream workspaces re-read `AGENTS.MD` when starting work.
 - When updating the shared instructions, edit `agent-scripts/AGENTS.MD`, mirror the change into `~/AGENTS.MD` (Codex global), and let downstream repos continue referencing the pointer.
 
@@ -36,7 +36,7 @@ Additional skills (copied 2025-12-31) are from @Dimillian’s public `Dimillian/
 - This repository is the canonical mirror for the guardrail helpers used in mcporter and other Sweetistics projects. Whenever you edit `scripts/committer`, `scripts/docs-list.ts`, or related guardrail files in another repo, copy the changes back here immediately (and vice versa) so the code stays byte-identical.
 - When someone asks to “sync agent scripts,” update this repo, compare it against the active project, and reconcile differences in both directions before continuing.
 
-## @steipete Agent Instructions (pointer workflow)
+## @jverdi Agent Instructions (pointer workflow)
 - The only full copies of the guardrails are `agent-scripts/AGENTS.MD` and `~/AGENTS.MD`. Downstream repos should contain the pointer line plus any repo-local additions.
 - During a sync sweep: pull latest `agent-scripts`, ensure each target repo’s `AGENTS.MD` contains the pointer line at the top, append any repo-local notes beneath it, and update the helper scripts as needed.
 - If a repo needs custom instructions, clearly separate them from the pointer so future sweeps don’t overwrite local content.

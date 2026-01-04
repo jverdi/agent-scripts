@@ -1,11 +1,11 @@
 # Tools Reference
 
-CLI tools available on Peter's machines. Use these for agentic tasks.
+CLI tools available on Jared's machines. Use these for agentic tasks.
 
 ## bird 🐦
 Twitter/X CLI for posting, replying, reading tweets.
 
-**Location**: `~/Projects/bird/bird`
+**Location**: `~/code/bird/bird`
 
 **Commands**:
 ```bash
@@ -15,7 +15,7 @@ bird read <tweet-id-or-url>            # Fetch tweet content
 bird replies <tweet-id-or-url>         # List replies to a tweet
 bird thread <tweet-id-or-url>          # Show full conversation thread
 bird search "<query>" [-n count]       # Search tweets
-bird mentions [-n count]               # Find tweets mentioning @clawdbot
+bird mentions [-n count]               # Find tweets mentioning @jverdi
 bird whoami                            # Show logged-in account
 bird check                             # Show credential sources
 ```
@@ -27,7 +27,7 @@ bird check                             # Show credential sources
 ## sonoscli 🔊
 Control Sonos speakers over local network (UPnP/SOAP).
 
-**Location**: `~/Projects/sonoscli/bin/sonos`
+**Location**: `~/code/sonoscli/bin/sonos`
 
 **Commands**:
 ```bash
@@ -58,7 +58,7 @@ sonos open --name "Room" spotify:track:<id>
 ## peekaboo 👀
 Screenshot, screen inspection, and click automation.
 
-**Location**: `~/Projects/Peekaboo`
+**Location**: `~/code/Peekaboo`
 
 **Commands**:
 ```bash
@@ -72,14 +72,14 @@ peekaboo permissions status            # Check TCC permissions
 
 **Requirements**: Screen Recording + Accessibility permissions.
 
-**Docs**: `~/Projects/Peekaboo/docs/commands/`
+**Docs**: `~/code/Peekaboo/docs/commands/`
 
 ---
 
 ## sweetistics 📊
 Twitter/X analytics desktop app (Tauri).
 
-**Location**: `~/Projects/sweetistics`
+**Location**: `~/code/sweetistics`
 
 Use for deeper Twitter data analysis beyond what `bird` provides.
 
@@ -88,7 +88,7 @@ Use for deeper Twitter data analysis beyond what `bird` provides.
 ## clawdis 📡
 WhatsApp/Telegram messaging gateway and agent interface.
 
-**Location**: `~/Projects/clawdis`
+**Location**: `~/code/clawdis`
 
 **Commands**:
 ```bash

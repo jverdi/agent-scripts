@@ -1,15 +1,14 @@
 # AGENTS.MD
 
-Peter owns this. Start: say hi + 1 motivating line.
+Jared owns this. Start: say hi + 1 motivating line.
 Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 
 ## Agent Protocol
-- Contact: Peter Steinberger (@steipete, steipete@gmail.com).
-- Workspace: `~/Projects`. Missing steipete repo: clone `https://github.com/steipete/<repo>.git`.
-- 3rd-party/OSS (non-steipete): clone under `~/Projects/oss`.
-- `~/Projects/manager`: private ops (domains/DNS, redirects/workers, runbooks).
-- “MacBook” / “Mac Studio” => SSH there; find hosts/IPs via `tailscale status`.
-- Files: repo or `~/Projects/agent-scripts`.
+- Contact: Jared Verdi (@jverdi, jared@jaredverdi.com).
+- Workspace: `~/code`. Missing jverdi repo: clone `https://github.com/jverdi/<repo>.git`.
+- 3rd-party/OSS (non-jverdi): clone under `~/code/oss`.
+- `~/code/manager`: private ops (domains/DNS, redirects/workers, runbooks).
+- Files: repo or `~/code/agent-scripts`.
 - PRs: use `gh pr view/diff` (no URLs).
 - “Make a note” => edit AGENTS.md (shortcut; not a blocker). Ignore `CLAUDE.md`.
 - No `./runner`. Guardrails: use `trash` for deletes.
@@ -35,10 +34,10 @@ Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 - Replace asset; keep dimensions; commit; run gate; verify CI.
 
 ## Important Locations
-- Blog repo: `~/Projects/steipete.me`
-- Notes/Runbooks: `~/Projects/manager/docs/` (e.g. `mac-studio.md`, `mac-vm.md`)
-- OpenAI/Codex limits tracking: `~/Documents/steipete/codex limits.md`
-- Obsidian vault: `$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/steipete-notes`
+- Blog repo: `~/code/jaredverdi.com`
+- Notes/Runbooks: `~/code/manager/docs/` (e.g. `mac-studio.md`, `mac-vm.md`)
+- OpenAI/Codex limits tracking: `~/Documents/jaredverdi/codex-limits.md`
+- Obsidian vault: `$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/jaredverdi-notes`
 - Sparkle keys: `~/Library/CloudStorage/Dropbox/Backup/Sparkle`
 
 ## Docs
@@ -46,7 +45,7 @@ Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 - Follow links until domain makes sense; honor `Read when` hints.
 - Keep notes short; update docs when behavior/API changes (no ship w/o docs).
 - Add `read_when` hints on cross-cutting docs.
-- Model note (2025-11-23): no `gpt-5.1-pro` / `grok-4.1` on Peter’s keys yet.
+- Model note (2025-11-23): no `gpt-5.1-pro` / `grok-4.1` on Jared’s keys yet.
 - Model preference: latest only. OK: Anthropic Opus 4.5 / Sonnet 4.5 (Sonnet 3.5 = old; avoid), OpenAI GPT-5.2, xAI Grok-4.1 Fast, Google Gemini 3 Flash.
 
 ## PR Feedback
@@ -71,7 +70,7 @@ Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 - `git checkout` ok for PR review / explicit request.
 - Branch changes require user consent.
 - Destructive ops forbidden unless explicit (`reset --hard`, `clean`, `restore`, `rm`, …).
-- Remotes under `~/Projects`: prefer HTTPS; flip SSH->HTTPS before pull/push.
+- Remotes under `~/code`: prefer HTTPS; flip SSH->HTTPS before pull/push.
 - Commit helper on PATH: `committer` (bash). Prefer it; if repo has `./scripts/committer`, use that.
 - Don’t delete/rename unexpected stuff; stop + ask.
 - No repo-wide S/R scripts; keep edits small/reviewable.
@@ -97,23 +96,18 @@ Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 
 ## Tools
 
-Read `~/Projects/agent-scripts/tools.md` for the full tool catalog if it exists.
+Read `~/code/agent-scripts/tools.md` for the full tool catalog if it exists.
 
 ### bird
-- X CLI: `~/Projects/bird/bird`. Cmds: `tweet`, `reply`, `read`, `thread`, `search`, `mentions`, `whoami`.
+- X CLI: `~/code/bird/bird`. Cmds: `tweet`, `reply`, `read`, `thread`, `search`, `mentions`, `whoami`.
 - Uses Firefox cookies by default (`--firefox-profile` to switch).
 
-### sonoscli
-- Sonos CLI: `~/Projects/sonoscli/bin/sonos`. Cmds: `discover`, `status`, `play/pause/stop`, `volume set`, `group`.
-- SSDP can fail: use `--ip <speaker-ip>`.
-- Spotify SMAPI: `sonos smapi search --service "Spotify" --category tracks "query"`.
-
 ### peekaboo
-- Screen tools: `~/Projects/Peekaboo`. Cmds: `capture`, `see`, `click`, `list`, `tools`, `permissions status`.
-- Needs Screen Recording + Accessibility. Docs: `~/Projects/Peekaboo/docs/commands/`.
+- Screen tools: `~/code/Peekaboo`. Cmds: `capture`, `see`, `click`, `list`, `tools`, `permissions status`.
+- Needs Screen Recording + Accessibility. Docs: `~/code/Peekaboo/docs/commands/`.
 
 ### sweetistics
-- X analytics app: `~/Projects/sweetistics`.
+- X analytics app: `~/code/sweetistics`.
 
 ### committer
 - Commit helper (PATH). Stages only listed paths; required here. Repo may also ship `./scripts/committer`.

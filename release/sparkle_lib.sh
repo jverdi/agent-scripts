@@ -1,13 +1,12 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Shared Sparkle/release helpers for CodexBar/Trimmy/RepoBar.
 # Expected env/args:
 #   SPARKLE_PRIVATE_KEY_FILE : path to ed25519 private key (comment-free)
 #   APPCAST                  : path to appcast.xml
 #   APP_NAME                 : e.g. CodexBar
 #   ARTIFACT_PREFIX          : e.g. CodexBar-
-#   BUNDLE_ID                : e.g. com.steipete.codexbar
+#   BUNDLE_ID                : e.g. com.jaredverdi.codexbar
 #   VERSION                  : marketing version (e.g. 0.5.6)
 #   BUILD_NUMBER             : build (sparkle:version) if needed
 
